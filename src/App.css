@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: url("https://thumbs.dreamstime.com/z/concept-social-media-different-social-icons-blue-background-social-concept-social-media-different-social-icons-blue-130184869.jpg") no-repeat top ;
+    background-size: cover;
+}
+header{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.btnAddNewWrapper{
+    width: 60%;
+    margin: 0 auto;
+    text-align: end;
+}
+.btnAddNew{
+    width: 70px;
+    height: 30px;
+    background:none;
+    border: 3px solid #41a6ff;
+    border-radius: 10px;
+}
+.btnAddNew:hover, .tableBtn:hover{
+    border: none;
+    background:#38c738;
+    color:white;
+}
+.tableWrapper{
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.usersDataTable{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.td{
+    border: 1px solid black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tableBtn{
+    width: 50px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background: orange;
+    color: white;
+    margin-left: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
+.buttonsContainer{
+ text-align: end;
+}
+.buttonsContainer input{
+    width: 50px;
+    height: 25px;
+    border:none;
+    margin-left: 10px;
+}
+.editButton:hover{
+    background: orange;
+    color: white;
+}
+.deleteButton:hover{
+    background: red;
+    color: white;
+}
+.author{
+    text-align: end;
+}
+.form_wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.form{
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    top:50%;
+    transform: translateY(-100%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+.form_field{
+    width: 50%;
+    text-align: end;
+    margin: 10px auto;
+}
+.form__btn{
+    width: 60px;
+    height: 25px;
+    margin-right:10px;
+    border: none;
+}
+.form__btn_submit:hover{
+    background:#38c738;
+    color:white
+}
+.form_btn_cancel:hover{
+    background: red;
+    color: white;
+}
+.errorField{
+    color:red;
+    font-style: italic;
 }
